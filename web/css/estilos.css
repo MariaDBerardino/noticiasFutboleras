@@ -1,0 +1,146 @@
+body {
+   font: 1em Helvetica;
+   background: #999999;
+
+   color: #ffffff;
+  }
+
+  #main {
+   min-height: 800px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+   form{
+       float: top;  
+       right:  0;
+   } 
+   
+  * image {
+    max-width: fit-content;
+    height: auto;
+}
+  #main > section {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #cccc33;
+/*   border-radius: 7pt;        */
+   background: #072d04;
+   -webkit-flex: 3 1 60%;
+           flex: 3 1 60%;
+   -webkit-order: 2;
+           order: 2;
+   background-image: url(air.jpg);
+   background-size: auto;
+   
+   }
+  
+  #main > nav {
+   margin: 4px;
+   padding: 5px;
+   font-size: large;
+   border: 1px solid #8888bb;
+ /*  border-radius: 7pt;            */
+   background-repeat: no-repeat;
+   background: #376b2b; 
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 1;
+           order: 1;
+   }
+  
+  #main > aside {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+/*   border-radius: 7pt;            */
+   background: #376b2b;
+   background-repeat: no-repeat;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 3;
+           order: 3;
+   }
+ 
+  header , footer{
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 100px;
+   border: 1px solid #eebb55;
+/*   border-radius: 7pt;        */
+   background-image: url("cancha2.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #ffffff;
+   }
+
+.boxes {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+/*   border-radius: 7pt;            */
+   background: #dddddd;
+   color: #072d04;
+}
+
+  /* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+   }
+
+   #main > article, #main > nav, #main > aside, #main > div {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+
+  }  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+ /*   border-radius: 7pt;           */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 8px 16px; 
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    }
+    
+
+.leermasOscuro{
+    background: transparent;
+   }
+
+.letra{
+    font-size: xx-large;   
+    
+   }
+
